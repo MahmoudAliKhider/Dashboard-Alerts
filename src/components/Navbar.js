@@ -1,4 +1,3 @@
-// Navbar.js
 import React from 'react';
 import {
     InputGroup,
@@ -13,24 +12,24 @@ import {
     Image,
     Center,
     Badge,
-    Icon
+    Icon,
 } from '@chakra-ui/react';
 import { SearchIcon, BellIcon, ArrowDownIcon } from '@chakra-ui/icons';
 import logo from "../assets/images/logo.png";
 import avatar from "../assets/images/avatar.jpg";
-
 const Navbar = () => {
     const NotificationCount = 6;
+
     return (
-        <Flex direction="row" align="center">
-            {/* Logo */}
+        <Flex direction={{ base: 'row', md: 'row' }} align="center">
             <Box
-                height="65px"
+                height={{ base: '50px', md: '65px' }}
                 color="white"
                 fontWeight="bold"
-                width="250px"
-                marginRight="60px"
-                marginLeft="50px"
+                width={{ base: '100px', md: '250px' }}
+                marginBottom={{ base: '10px', md: '0' }}
+                marginRight={{ base: "6px", md: "50px" }}
+                marginLeft={{ base: "6px", md: "50px" }}
             >
                 <Center height="100%">
                     <Image src={logo} alt="Logo" height="100%" />
@@ -48,14 +47,19 @@ const Navbar = () => {
                 borderRadius="20px"
                 height="65px"
             >
-
-                <InputGroup width="35%" marginStart="10px" backgroundColor="white" borderRadius="40px">
+                <InputGroup
+                    width={{ base: '90%', md: '35%' }}
+                    marginStart={{ base: '0', md: '10px' }}
+                    backgroundColor="white"
+                    borderRadius="40px"
+                >
                     <Input
                         placeholder="Search..."
                         pr="4.5rem"
                         color="gray"
                         marginLeft="5px"
                         borderRadius="40px"
+                        width="100%"
                     />
                     <InputLeftElement pointerEvents="none">
                         <IconButton
@@ -69,9 +73,9 @@ const Navbar = () => {
                 </InputGroup>
 
                 {/* Right side */}
-                <Flex align="center" >
+                <Flex align="center">
                     {/* Notification icon */}
-                    <Box position="relative" mr="5" >
+                    <Box position="relative" mr="4">
                         <IconButton
                             icon={<BellIcon color="#554DB7" boxSize="1.5rem" />}
                             colorScheme="#181818"
@@ -89,36 +93,30 @@ const Navbar = () => {
                         </Badge>
                     </Box>
 
-                    {/* Avatar and Name */}
-                    <Flex align="center" mr="5">
-                        <Avatar size="sm" src={avatar} mr="3" />
+                    {/* Avatar and Texts */}
+                    <Flex align="center" mr="4">
+                        <Avatar size="sm" src={avatar} mb="1" mr="4" />
                         <Flex flexDirection="column">
                             <Text fontSize="sm" color="#434343">Moni Roy</Text>
                             <Text fontSize="sm" color="#434343">Admin</Text>
                         </Flex>
-
                     </Flex>
 
-                    {/* Down button */}
                     <Button
                         mt="2"
                         colorScheme="whiteAlpha"
-                        backgroundColor="#181818"
                         borderRadius="50%"
                         border="1px solid #434343"
                         color="#434343"
-                        width=".9rem" // Set a fixed width
-                        minWidth="0.5rem" // Ensure the minimum width
-                        maxWidth="2rem" // Ensure the maximum width
-                        height="2rem"
+                        bg="#181818"
+                        p="10px"
                     >
-                        <Icon as={ArrowDownIcon} boxSize="0.9rem" />
+                        <Icon as={ArrowDownIcon} boxSize="1.0rem" />
                     </Button>
-
                 </Flex>
             </Flex>
         </Flex>
     );
-}
+};
 
 export default Navbar;
