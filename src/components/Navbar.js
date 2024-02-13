@@ -16,8 +16,8 @@ import {
     Icon
 } from '@chakra-ui/react';
 import { SearchIcon, BellIcon, ArrowDownIcon } from '@chakra-ui/icons';
-import { BsArrowDown } from 'react-icons/bs';
 import logo from "../assets/images/logo.png";
+import avatar from "../assets/images/avatar.jpg";
 
 const Navbar = () => {
     const NotificationCount = 6;
@@ -69,9 +69,9 @@ const Navbar = () => {
                 </InputGroup>
 
                 {/* Right side */}
-                <Flex align="center" ml="4px">
+                <Flex align="center" >
                     {/* Notification icon */}
-                    <Box position="relative" mr="4" >
+                    <Box position="relative" mr="5" >
                         <IconButton
                             icon={<BellIcon color="#554DB7" boxSize="1.5rem" />}
                             colorScheme="#181818"
@@ -90,8 +90,8 @@ const Navbar = () => {
                     </Box>
 
                     {/* Avatar and Name */}
-                    <Flex align="center">
-                        <Avatar size="sm" src="url_to_avatar_image.jpg" mr="2" />
+                    <Flex align="center" mr="5">
+                        <Avatar size="sm" src={avatar} mr="3" />
                         <Flex flexDirection="column">
                             <Text fontSize="sm" color="#434343">Moni Roy</Text>
                             <Text fontSize="sm" color="#434343">Admin</Text>
@@ -104,11 +104,13 @@ const Navbar = () => {
                         mt="2"
                         colorScheme="whiteAlpha"
                         backgroundColor="#181818"
-                        borderRadius="50%" 
+                        borderRadius="50%"
                         border="1px solid #434343"
                         color="#434343"
-                        width="1.0rem" 
-                        height="2rem" 
+                        width=".9rem" // Set a fixed width
+                        minWidth="0.5rem" // Ensure the minimum width
+                        maxWidth="2rem" // Ensure the maximum width
+                        height="2rem"
                     >
                         <Icon as={ArrowDownIcon} boxSize="0.9rem" />
                     </Button>
