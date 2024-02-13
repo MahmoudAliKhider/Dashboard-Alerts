@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ChakraProvider,CSSReset, extendTheme } from '@chakra-ui/react';
+import Navbar from './components/Navbar';
+const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        bg: '#202020', 
+        padding:"10px"
+      },
+    },
+    
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <CSSReset />
+      <Navbar />
+      {/* Your other components/content go here */}
+    </ChakraProvider>
   );
 }
 
