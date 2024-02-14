@@ -34,9 +34,9 @@ const Filter = () => {
 
 
     return (
-        <Box p="7" bg="#212121" borderRadius="10px" color="white" width="290px">
+        <Box p="7" bg="#212121" borderRadius="10px" color="white" width={{base:"390px",md:"290px"}}>
 
-            <Text fontSize="28px" fontWeight="bold" textAlign="center" mb="10px">
+            <Text fontSize="26px" fontWeight="bold" textAlign="center" mb="5px">
                 Filters
             </Text>
 
@@ -162,8 +162,8 @@ const Filter = () => {
                 )}
             </Flex>
 
-            <Flex mt="20px" mb="7px">
-                <Button bg='#554DB7' size='md' width="100%" color="white" height="60px" fontSize="20px" fontWeight="bold" textAlign="center">
+            <Flex mt="10px" >
+                <Button bg='#554DB7' size='md' width="100%" color="white" height="50px" fontSize="20px" fontWeight="bold" textAlign="center">
                     Apply Filters
                 </Button>
             </Flex>
