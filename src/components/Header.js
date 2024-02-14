@@ -4,7 +4,7 @@ import { Flex, Button } from '@chakra-ui/react';
 const Header = () => {
   const buttonStyle = {
     borderRight: '1px solid white',
-    paddingRight: '6%',
+    paddingRight: '5%',
     borderRadius: '0px',
   };
 
@@ -13,16 +13,16 @@ const Header = () => {
       as="header"
       align="center"
       justify="space-between"
-      padding={{ base: '1rem', md: '1.9rem' }} 
-      borderRadius="20px"
-      marginTop="25px"
+      padding={{ base: '0.5rem', md: '1.1rem' }} 
+      borderRadius="15px"
+      marginTop="15px"
       bg="#181818"
       flexWrap="wrap" 
     >
       <Button
         variant="ghost"
         color="#434343"
-        fontSize={{ base: '20px', md: '30px' }} 
+        fontSize={{ base: '20px', md: '27px' }} 
         fontWeight="bold"
         _hover={{ color: 'white' }}
         _active={{ color: 'white', borderColor: 'white' }}
@@ -33,7 +33,7 @@ const Header = () => {
       <Button
         variant="ghost"
         color="#434343"
-        fontSize={{ base: '20px', md: '30px' }}
+        fontSize={{ base: '20px', md: '27px' }}
         fontWeight="bold"
         _hover={{ color: 'white' }}
         _active={{ color: 'white', borderColor: 'white' }}
@@ -44,7 +44,7 @@ const Header = () => {
       <Button
         variant="ghost"
         color="#434343"
-        fontSize={{ base: '20px', md: '30px' }}
+        fontSize={{ base: '20px', md: '27px' }}
         fontWeight="bold"
         _hover={{ color: 'white' }}
         _active={{ color: 'white', borderColor: 'white' }}
@@ -55,7 +55,7 @@ const Header = () => {
       <Button
         variant="ghost"
         color="white"
-        fontSize={{ base: '20px', md: '30px' }}
+        fontSize={{ base: '20px', md: '27px' }}
         fontWeight="bold"
         _hover={{ color: 'white' }}
         _active={{ color: 'white', borderColor: 'white' }}
@@ -66,7 +66,7 @@ const Header = () => {
       <Button
         variant="ghost"
         color="#434343"
-        fontSize={{ base: '20px', md: '30px' }}
+        fontSize={{ base: '20px', md: '27px' }}
         fontWeight="bold"
         _hover={{ color: 'white' }}
         _active={{ color: 'white', borderColor: 'white' }}

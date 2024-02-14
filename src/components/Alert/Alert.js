@@ -5,9 +5,9 @@ import Filter from './Filter'
 const Alert = () => {
     return (
         <Flex
-            marginTop="20px"
+            marginTop="10px"
             bg="#181818"
-            padding="30px"
+            padding="40px"
             borderRadius="20px"
         >
             <Box>
