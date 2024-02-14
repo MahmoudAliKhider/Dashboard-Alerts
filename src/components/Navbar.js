@@ -15,6 +15,7 @@ import {
     Icon,
 } from '@chakra-ui/react';
 import { SearchIcon, BellIcon, ArrowDownIcon } from '@chakra-ui/icons';
+import { CgChevronDown } from "react-icons/cg";
 import logo from "../assets/images/logo.png";
 import avatar from "../assets/images/avatar.jpg";
 const Navbar = () => {
@@ -105,13 +106,13 @@ const Navbar = () => {
                     <Button
                         mt="2"
                         colorScheme="whiteAlpha"
-                        borderRadius="50%"
-                        border="1px solid #434343"
+                        borderRadius="60%"
+                        border="1px double #434343"
                         color="#434343"
                         bg="#181818"
                         p="10px"
                     >
-                        <Icon as={ArrowDownIcon} boxSize="1.0rem" />
+                        <Icon as={CgChevronDown}  />
                     </Button>
                 </Flex>
             </Flex>

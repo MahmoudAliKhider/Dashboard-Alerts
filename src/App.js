@@ -2,6 +2,7 @@ import React from 'react';
 import { ChakraProvider, CSSReset, extendTheme } from '@chakra-ui/react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import Alert from './components/Alert/Alert';
 const theme = extendTheme({
   styles: {
     global: {
@@ -20,6 +21,8 @@ function App() {
       <CSSReset />
       <Navbar />
       <Header />
+
+      <Alert />
     </ChakraProvider>
   );
 }
