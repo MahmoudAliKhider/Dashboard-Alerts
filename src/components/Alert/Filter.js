@@ -34,9 +34,9 @@ const Filter = () => {
 
 
     return (
-        <Box p="7" bg="#212121" borderRadius="10px" color="white" width={{base:"390px",md:"290px"}}>
+        <Box p="7" bg="#212121" fontWeight="SemiBold" fontFamily="Poppins" borderRadius="10px" color="white" width={{base:"390px",md:"290px"}}>
 
-            <Text fontSize="26px" fontWeight="bold" textAlign="center" mb="5px">
+            <Text fontSize="26px" fontWeight="SemiBold" fontFamily="Poppins" textAlign="center" mb="5px">
                 Filters
             </Text>
 

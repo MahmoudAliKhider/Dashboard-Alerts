@@ -57,6 +57,16 @@ const AlertMessage = () => {
                 { word: 'high risk', icon: <Icon as={BiCoinStack} boxSize={6} /> },
             ]
         },
+        {
+            id: 6, content: 'X company released a short report on $XYZ, High IV option sales opps',
+            keywords: [
+                { word: '$TSLA', icon: <Icon as={FaDollarSign} boxSize={6} /> },
+                { word: '200Contracts', icon: <Icon as={BsFileEarmarkText} boxSize={6} /> },
+                { word: '12.4%', icon: <Icon as={VscGraph} boxSize={6} /> },
+                { word: 'high risk', icon: <Icon as={BiCoinStack} boxSize={6} /> },
+            ]
+        },
+   
 
     ];
 
@@ -65,7 +75,7 @@ const AlertMessage = () => {
     };
 
     return (
-        <Box p="4" bg="#212121" borderRadius="10px" color="white" width={{base:"380px", md:"100%"}} mt={{base:"5px" }}>
+        <Box p="4" bg="#212121" borderRadius="10px" color="white" width={{base:"380px", md:"100%"}} mt={{base:"3px" }}>
             {alerts.map((alert) => (
                 <Flex
                     key={alert.id}
@@ -101,14 +111,14 @@ const AlertMessage = () => {
                                     borderRight={index < alert.keywords.length - 1 ? '1px solid white' : '0'}
                                 >
                                     {keyword.icon}
-                                    <Text ml="3" >{keyword.word}</Text>
+                                    <Text ml="3" fontFamily="Poppins" fontWeight="regular">{keyword.word}</Text>
                                 </Flex>
                             ))
                         }
                     </Flex>
 
                     <Box>
-                        <Text ml={{ base: '0', md: '9' }} mt="2" fontSize={{ base: '14px', md: '17px' }}>{alert.content}</Text>
+                        <Text ml={{ base: '0', md: '9' }} mt="2" fontSize={{ base: '14px', md: '19px' }} fontFamily="Poppins" fontWeight="regular">{alert.content}</Text>
                     </Box>
 
                 </Flex>

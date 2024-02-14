@@ -17,7 +17,9 @@ const Header = () => {
       borderRadius="15px"
       marginTop="15px"
       bg="#181818"
-      flexWrap="wrap" 
+      flexWrap="wrap"
+      fontWeight="bold" 
+      fontFamily="Poppins"
     >
       <Button
         variant="ghost"

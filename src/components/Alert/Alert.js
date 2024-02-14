@@ -6,7 +6,7 @@ import AlertMessage from './AlertMessage'
 const Alert = () => {
     return (
         <Flex
-            marginTop="10px"
+            marginTop="5px"
             bg="#181818"
             padding="30px"
             borderRadius="20px"

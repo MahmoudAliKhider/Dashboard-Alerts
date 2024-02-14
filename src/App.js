@@ -8,7 +8,7 @@ const theme = extendTheme({
     global: {
       body: {
         bg: '#202020',
-        padding: "10px"
+        padding: "7px"
       },
     },
 
